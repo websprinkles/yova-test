@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NotificationsService } from '../services/notifications.service';
-import { Notification, Status } from '../entities/notifications';
+import { NotificationsService } from '../../services/notifications.service';
+import { Notification, Status } from '../../entities/notifications';
 
 @Component({
   selector: 'app-dashboard',

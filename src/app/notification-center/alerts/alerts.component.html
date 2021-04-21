@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let alert of alerts">
+    <div class="alert">
+      <i class="fa fa-info-circle"></i>
+      <p>{{alert.title}}</p>
+      <a routerLink='/notifications'>Show more</a>
+      <button (click)="markAsOld(alert);" class="button"><i class="fa fa-times-circle"></i></button>
+    </div>
+  </li>
+</ul>

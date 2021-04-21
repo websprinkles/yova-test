@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f6f1;
+}
+
+h1, h2, h3 {
+  font-family: "Yeseva One";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+<h2>Mitteilungen</h2>
+
+<ul>
+  <li *ngFor="let notification of notifications; let i = index" class="notification"
+    [ngClass]="{'selected': i === notificationToShow, 'new': notification.status === statusNew}">
+    <div class="header" (click)="toggleContent(i)">
+      <div class="aside">
+        <i class="fa fa-circle"></i>
+        <p>{{notification.date | dateString}}</p>
+      </div>
+      <div class="title">
+        <p>{{notification.title}}</p>
+        <i class="fa fa-chevron-up"></i>
+        <i class="fa fa-chevron-down"></i>
+      </div>
+    </div>
+    <div class="content">
+      <div class="aside">
+        <button (click)="markAsOld(notification)" id="delete">Loschen</button>
+      </div>
+      <div class="desc">
+        <p>Hello Rebbeca</p>
+        <p [innerHTML]="notification.desc"></p>
+      </div>
+    </div>
+  </li>
+</ul>

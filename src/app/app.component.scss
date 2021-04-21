@@ -1,0 +1,21 @@
+header {
+  background-color: aquamarine;
+  padding: 20px 0;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      margin-right: 20px;
+    }
+  }
+}
+
+nav,
+main {
+  min-width: 83%;
+  max-width: 83%;
+  margin: auto;
+}
